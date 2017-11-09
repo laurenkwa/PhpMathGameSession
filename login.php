@@ -5,6 +5,8 @@
         
     } else if(isset($_SESSION["invalidlogin"])) {
         $error = $_SESSION["invalidlogin"];
+        unset($_SESSION["invalidlogin"]);
+        
     }  
 
         echo '<h1>
@@ -34,6 +36,7 @@
                 </div>
             </form>
         </div>';
+        unset($_SESSION["invalidlogin"]);
 ?>
 
 <html>
