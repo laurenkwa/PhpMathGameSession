@@ -5,22 +5,8 @@
         die();
     } else if(isset($_SESSION["invalidlogin"])) {
         $error = $_SESSION["invalidlogin"];
-    } 
-   
-   
-    
-?>
-<html>
-    <head>
-        <title>Math Game</title>
-        <meta charset="UTF-8"/>
-        <link rel = "stylesheet" type = "text/css" href = "style/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="Style/style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    
-    <body>
-       <?php
+    }  
+
         echo '<h1>
                 Please login to enjoy our Math Game. 
             </h1> 
@@ -48,7 +34,19 @@
                 </div>
             </form>
         </div>';
-        ?>
+?>
+
+<html>
+    <head>
+        <title>Math Game</title>
+        <meta charset="UTF-8"/>
+        <link rel = "stylesheet" type = "text/css" href = "style/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Style/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    
+    <body>
+      
 
         
         

@@ -4,11 +4,11 @@
             die();
     }
 
-    
     if (!isset($_SESSION["login"])) {
         header("Location:login.php");
         die();
     }
+
     if (!isset($_POST["answer"])) {
             echo '<h1>Math Game </h1>';
 
