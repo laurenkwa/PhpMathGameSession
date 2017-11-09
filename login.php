@@ -1,5 +1,4 @@
-<?php 
-    session_start();
+<?php session_start();
     if($_POST["login"]) {
         header("Location:authenticate.php");
         die();

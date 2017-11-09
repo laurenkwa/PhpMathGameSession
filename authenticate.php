@@ -1,5 +1,4 @@
-<?php
-    session_start();
+<?php session_start();
     $username = $_POST["email"];
     $password = $_POST["password"];
     $i=0;
