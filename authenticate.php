@@ -3,7 +3,7 @@
     $password = $_POST["password"];
     $i=0;
     $file = file_get_contents("credentials.config");
-    $line = explode("\r",$file);
+    $line = explode(PHP_EOL,$file);
 
     foreach($line as $item) {
         $item = explode(",", $item);
