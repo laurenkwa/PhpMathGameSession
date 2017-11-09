@@ -5,11 +5,11 @@
     }
 
     
-    if (!isset($_SESSION["login"] {
+    if (!isset($_SESSION["login"])) {
         header("Location:login.php");
         die();
     }
-        !isset($_POST["answer"])) {
+    if (!isset($_POST["answer"])) {
             echo '<h1>Math Game </h1>';
 
             $min = 0;
