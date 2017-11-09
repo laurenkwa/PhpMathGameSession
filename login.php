@@ -5,7 +5,7 @@
         die();
     } else if(isset($_SESSION["invalidlogin"])) {
         $error = $_SESSION["invalidlogin"];
-    } 
+    } else {
         echo '<h1>
                 Please login to enjoy our Math Game. 
             </h1> 
@@ -36,7 +36,7 @@
 
    
    
-
+    }
 ?>
 <html>
     <head>
@@ -48,10 +48,7 @@
     </head>
     
     <body>
-        <?php 
-        
-        
-        ?>
+       
         
         
         
