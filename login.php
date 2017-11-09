@@ -2,6 +2,7 @@
     if($_POST["login"]) {
         header("Location:authenticate.php");
         die();
+        
     } else if(isset($_SESSION["invalidlogin"])) {
         $error = $_SESSION["invalidlogin"];
     }  
