@@ -40,6 +40,7 @@
         unset($_SESSION["invalidlogin"]);
 ?>
 
+<!DOCTYPE html>
 <html>
     <head>
         <title>Math Game</title>
