@@ -8,14 +8,25 @@
         unset($_SESSION["invalidlogin"]);
         
     }  
+      
+?>
 
-        echo '<h1>
-                The Math Game
-            </h1> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Game</title>
+        <meta charset="UTF-8"/>
+        <link rel = "stylesheet" type = "text/css" href = "style/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Style/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    
+    <body>
+      <h1>The Math Game</h1> 
             <br/><img src="Images/calculator.png" alt="calculator"/>
             <br/><br/>
-            <div class="container"><p id="error">' . $error . 
-            '</p><br/><br/><form action="authenticate.php" method="post">
+            <div class="container"><p id="error"> <?php echo $error ?> 
+            </p><br/><br/><form action="authenticate.php" method="post">
                 <div class="row">
                     <div class="col-md-2 col-md-offset-4"><span id="caption">Email: </span> </div>
                     <div class="col-md-1">
@@ -36,25 +47,10 @@
                     </div>   
                 </div>
             </form>
-        </div>';
-        unset($_SESSION["invalidlogin"]);
-?>
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Math Game</title>
-        <meta charset="UTF-8"/>
-        <link rel = "stylesheet" type = "text/css" href = "style/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="Style/style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    
-    <body>
-      
-
+        </div>
         
-        
+        <?php unset($_SESSION["invalidlogin"]); ?>
+
     </body>
     
 </html>
