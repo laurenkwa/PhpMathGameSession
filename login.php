@@ -28,14 +28,14 @@
             <div class="container"><p id="error"> <?php echo $error ?> 
             </p><br/><br/><form action="authenticate.php" method="post">
                 <div class="row">
-                    <div class="col-md-2 col-md-offset-4"><span id="caption">Email: </span> </div>
+                    <div class="col-md-2 col-md-offset-4"><span class="caption">Email: </span> </div>
                     <div class="col-md-1">
                         <input name="email" type="email" required/>
                     </div>   
                 </div>
                 <div class="row">
                     <br/>
-                    <div class="col-md-2 col-md-offset-4"><span id="caption">Password: </span></div>
+                    <div class="col-md-2 col-md-offset-4"><span class="caption">Password: </span></div>
                     <div class="col-md-1">
                         <input name="password" type="password" required/>
                     </div>   
