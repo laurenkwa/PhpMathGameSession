@@ -33,14 +33,14 @@
 
             echo '<form method = "post" action="index.php">';
             echo '<input type="text" name="answer" /><br/><br/>';
-            echo '<input type="submit" name="submit" value="SUBMIT"/><br/><br/>';
+            echo '<input type="submit" name="submit" value="SUBMIT" class="btn btn-info"/><br/><br/>';
             echo '<input type="hidden" name="first" value="' . $first . '"/>';
             echo '<input type="hidden" name="second" value="' . $second . '"/>';
             echo '<input type="hidden" name="total" value="' . $total . '"/>';
             echo '<input type="hidden" name="operator" value="' . $operator . '"/>';
     
             echo "<hr/>";
-            echo '<br/><br/><br/><input type="submit" name="logout" value="LOGOUT"/>';
+            echo '<br/><br/><br/><input type="submit" name="logout" value="LOGOUT" class="btn btn-info"/>';
         
     } else if (isset($_POST["answer"])) {
 
@@ -67,7 +67,7 @@
 
                 echo '<form method = "post" action="index.php">';
                 echo '<input type="text" name="answer" /><br/><br/>';
-                echo '<input type="submit" name="submit" value="SUBMIT"/><br/><br/>';
+                echo '<input type="submit" name="submit" value="SUBMIT" class="btn btn-info"/><br/><br/>';
                 echo '<input type="hidden" name="first" value="' . $first . '"/>';
                 echo '<input type="hidden" name="second" value="' . $second . '"/>';
                 echo '<input type="hidden" name="total" value="' . $total . '"/>';
@@ -96,7 +96,7 @@
 
         echo "<hr/>";
 
-        echo '<br/><br/><br/><input type="submit" name="logout" value="LOGOUT"/>';
+        echo '<br/><br/><br/><input type="submit" name="logout" value="LOGOUT" class="btn btn-info"/>';
     }
 ?>
 

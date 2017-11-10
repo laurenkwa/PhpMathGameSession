@@ -1,8 +1,25 @@
 ﻿body {
     margin:auto;
     text-align:center;
+   
+
 }
 
 #error {
     color:red;
+    font-weight:bold;
+}
+
+img {
+    height:100px;
+    width:100px;
+}
+
+h1 {
+    color:#27B8EB;
+}
+
+#caption {
+    color: #27B8EB;
+    font-weight:bold;
 }

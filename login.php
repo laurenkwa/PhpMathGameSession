@@ -10,20 +10,21 @@
     }  
 
         echo '<h1>
-                Please login to enjoy our Math Game. 
+                The Math Game
             </h1> 
-        <br/><br/>
-        <div class="container"><p id="error">' . $error . 
+            <br/><img src="Images/calculator.png" alt="calculator"/>
+            <br/><br/>
+            <div class="container"><p id="error">' . $error . 
             '</p><br/><br/><form action="authenticate.php" method="post">
                 <div class="row">
-                    <div class="col-md-2 col-md-offset-4">Email: </div>
+                    <div class="col-md-2 col-md-offset-4"><span id="caption">Email: </span> </div>
                     <div class="col-md-1">
                         <input name="email" type="email" required/>
                     </div>   
                 </div>
                 <div class="row">
                     <br/>
-                    <div class="col-md-2 col-md-offset-4">Password: </div>
+                    <div class="col-md-2 col-md-offset-4"><span id="caption">Password: </span></div>
                     <div class="col-md-1">
                         <input name="password" type="password" required/>
                     </div>   
@@ -31,7 +32,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <br/><br/>
-                        <input type="submit" name="login" value="LOGIN"/>
+                        <input type="submit" name="login" value="LOGIN" class="btn btn-info"/>
                     </div>   
                 </div>
             </form>
