@@ -10,4 +10,4 @@ Completed everything.
 
 URL of website: 
 
-http://phpmathgame.azurewebsites.net/login.php
+http://phpmathgame.azurewebsites.net/

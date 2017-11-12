@@ -84,15 +84,20 @@
             echo '<input type="hidden" name="questions" value="' . $questions . '"/>';
             echo "Your score is " . $_SESSION["score"] . " / " . $_SESSION["questions"];
             } else if ($_POST["total"] != $_POST["answer"]) {
-
-            echo "<p id='error'> Incorrect. The correct answer is " . $_POST["total"] . ".</p> ";
-            $_SESSION["questions"]++;
-            $_SESSION["score"] = $_SESSION["score"] + 0;
-            echo '<input type="hidden" name="score" value="' . $score . '"/>';
-            echo '<input type="hidden" name="questions" value="' . $questions . '"/>';
-            echo "<br/>Your score is " . $_SESSION["score"] . " / " . $_SESSION["questions"];
+                 if(!is_numeric($_POST["answer"])) {
+                    echo "<p id='error'> Please input a numeric answer.</p> ";
+                } else {
+                    echo "<p id='error'> Incorrect. The correct answer is " . $_POST["total"] . ".</p> ";
+                    $_SESSION["questions"]++;
+                    $_SESSION["score"] = $_SESSION["score"] + 0;
+                    echo '<input type="hidden" name="score" value="' . $score . '"/>';
+                    echo '<input type="hidden" name="questions" value="' . $questions . '"/>';
+                    echo "<br/>Your score is " . $_SESSION["score"] . " / " . $_SESSION["questions"];
+             }
 
         }
+        
+       
 
         echo "<hr/>";
 
