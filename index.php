@@ -10,7 +10,7 @@
     }
 
     if (!isset($_POST["answer"])) {
-            echo '<h1>Math Game </h1>';
+            echo '<h1 class="header">Math Game </h1>';
 
             $min = 0;
             $max = 50;
@@ -44,7 +44,7 @@
         
     } else if (isset($_POST["answer"])) {
 
-        echo '<h1>Math Game </h1>';
+        echo '<h1 class="header">Math Game </h1>';
 
                 $min = 0;
                 $max = 50;

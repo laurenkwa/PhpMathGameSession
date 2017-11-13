@@ -1,8 +1,11 @@
 ﻿body {
     margin:auto;
     text-align:center;
-   
-
+    border-style: dotted solid;
+    padding: 20px;
+    color: #007FFF;
+    width: 99.5%;
+    background-image: url("../Images/background.jpg");
 }
 
 #error {
@@ -17,6 +20,25 @@ img {
 
 h1 {
     color:#27B8EB;
+    font-family: Pacifico;
+
+}
+
+@font-face	{
+	font-family: Pacifico;
+    src: url("../Images/Pacifico.ttf");
+}
+
+h1.header	{
+	color: #27B8EB;
+	border-style: solid;
+	border-radius: 25px;
+	padding: 20px;
+	width: 25%;
+	height: 15%;
+	margin: auto;
+	text-align: center;
+	background-image: url("../Images/banner.jpg");
 }
 
 .caption {

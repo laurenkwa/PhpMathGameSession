@@ -22,7 +22,7 @@
     </head>
     
     <body>
-      <h1>The Math Game</h1> 
+      <h1 class="header">The Math Game</h1> 
             <br/><img src="Images/calculator.png" alt="calculator"/>
             <br/><br/>
             <div class="container"><p id="error"> <?php echo $error ?> 
