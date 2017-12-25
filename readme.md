@@ -16,8 +16,10 @@ HTML and PHP.
 
 **Site Login Credentials:**
 
-Email: a@a.a
-Password: aaa
+1. Email: a@a.a
 
-Email: b@b.b
-Password: bbb
+  Password: aaa
+
+2. Email: b@b.b
+
+  Password: bbb
